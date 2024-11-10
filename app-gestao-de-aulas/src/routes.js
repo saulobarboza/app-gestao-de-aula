@@ -4,13 +4,13 @@ import { createStackNavigator } from '@react-navigation/stack';
 
 const AppStack = createStackNavigator();
 
-import ClassListing from './pages/ClassListing';
+import TopicListing from './pages/TopicListing';
 
 export default function Routes() {
   return (
     <NavigationContainer>
       <AppStack.Navigator screenOptions={{ headerShown: false }}>
-        <AppStack.Screen name="ClassListing" component={ClassListing} />
+        <AppStack.Screen name="TopicListing" component={TopicListing} />
       </AppStack.Navigator>
     </NavigationContainer>
   );
