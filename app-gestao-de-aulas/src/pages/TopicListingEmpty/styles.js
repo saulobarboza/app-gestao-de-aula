@@ -3,57 +3,57 @@ import Constants from 'expo-constants';
 
 export default StyleSheet.create({
   arrowLeftBackButton: {
-    paddingTop: Constants.statusBarHeight + 40,
-    paddingHorizontal: 24,
+    paddingHorizontal: 70,
+    paddingTop: Constants.statusBarHeight + 70,
     backgroundColor: '#333333',
   },
 
   container: {
     flex: 1,
-    paddingTop: 60,
-    paddingHorizontal: 24,
+    paddingTop: 400,
+    paddingHorizontal: 70,
     backgroundColor: '#333333',
     alignItems: 'center',
   },
 
   title: {
-    marginBottom: 15,
-    fontSize: 34,
+    marginBottom: 60,
+    fontSize: 90,
     color: '#FFFFFF',
     fontWeight: 'bold',
     textAlign: 'center'
   },
 
   subtitle: {
-    marginBottom: 30,
-    fontSize: 18,
+    marginBottom: 60,
+    fontSize: 48,
     color: '#FFFFFF',
     fontWeight: 'bold',
     alignItems: 'flex-start'
   },
 
   description: {
-    fontSize: 14,
-    lineHeight: 24,
+    fontSize: 38,
+    lineHeight: 60,
     color: '#666666',
     fontWeight: 'bold',
     textAlign: 'center'
   },
 
   bigPlusCircleIcon: {
-    marginTop: 40,
-    marginBottom: 40,
-    padding: 50,
+    marginTop: 60,
+    marginBottom: 60,
+    padding: 180,
     backgroundColor: '#474747',
-    borderRadius: 130
+    borderRadius: 360
   },
 
   addNewClassButton: {
     position: 'absolute',
-    right: 30,
-    bottom: 50,
-    padding: 15,
-    backgroundColor: '#28E020',
-    borderRadius: 30,
+    right: 70,
+    bottom: 140,
+    padding: 50,
+    backgroundColor: '#28e020',
+    borderRadius: 100,
   }
 });
