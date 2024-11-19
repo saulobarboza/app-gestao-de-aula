@@ -29,7 +29,7 @@ export default StyleSheet.create({
     fontSize: 48,
     color: '#FFFFFF',
     fontWeight: 'bold',
-    alignItems: 'flex-start'
+    textAlign: 'center'
   },
 
   description: {
