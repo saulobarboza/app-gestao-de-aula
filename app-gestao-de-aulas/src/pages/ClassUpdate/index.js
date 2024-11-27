@@ -1,9 +1,16 @@
 import { Feather } from '@expo/vector-icons';
 import { Text, View, TextInput, Alert, TouchableOpacity } from "react-native";
+import { useNavigation } from '@react-navigation/native';
 import { useForm, Controller } from "react-hook-form";
 import styles from './styles';
 
 export default function ClassUpdate() {
+  const navigation = useNavigation();
+
+  function navigateToClassListing() {
+    navigation.navigate('ClassListing');
+  }
+
   const {
     control,
     handleSubmit,
@@ -16,8 +23,8 @@ export default function ClassUpdate() {
 
   return (
     <>
-      <View style={styles.arrowLeftBackButton}>
-        <TouchableOpacity>
+      <View style={styles.navigationButton}>
+        <TouchableOpacity onPress={() => navigateToClassListing()}>
           <Feather name="arrow-left" size={100} color="#FFFFFF" />
         </TouchableOpacity>
       </View>

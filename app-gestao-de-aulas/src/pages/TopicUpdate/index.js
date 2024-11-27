@@ -1,9 +1,16 @@
 import { Feather } from '@expo/vector-icons';
 import { Text, View, TextInput, Alert, TouchableOpacity } from "react-native";
+import { useNavigation } from '@react-navigation/native';
 import { useForm, Controller } from "react-hook-form";
 import styles from './styles';
 
 export default function TopicUpdate() {
+  const navigation = useNavigation();
+
+  function navigateToTopicListing() {
+    navigation.navigate('TopicListing');
+  }
+
   const {
     control,
     handleSubmit,
@@ -20,7 +27,7 @@ export default function TopicUpdate() {
   return (
     <>
       <View style={styles.arrowLeftBackButton}>
-        <TouchableOpacity>
+        <TouchableOpacity onPress={() => navigateToTopicListing()}>
           <Feather name="arrow-left" size={100} color="#FFFFFF" />
         </TouchableOpacity>
       </View>

@@ -2,7 +2,7 @@ import { StyleSheet } from 'react-native';
 import Constants from 'expo-constants';
 
 export default StyleSheet.create({
-  arrowLeftBackButton: {
+  navigationButton: {
     paddingHorizontal: 70,
     paddingTop: Constants.statusBarHeight + 70,
     backgroundColor: '#333333',
